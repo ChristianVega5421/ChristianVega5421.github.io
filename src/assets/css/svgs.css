@@ -1,0 +1,49 @@
+/*c# SVG*/
+
+.global-svg {
+    fill: white;
+}
+
+.path-style {
+    stroke: none;
+    stroke-width: 1;
+    stroke-dasharray: none;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 10;
+    fill: white;
+    fill-rule: nonzero;
+    opacity: 1;
+}
+
+.rect-style {
+    stroke: none;
+    stroke-width: 1;
+    stroke-dasharray: none;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 10;
+    fill: white;
+    fill-rule: nonzero;
+    opacity: 1;
+}
+
+.g-style {
+    stroke: none;
+    stroke-width: 0;
+    stroke-dasharray: none;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 10;
+    fill: none;
+    fill-rule: nonzero;
+    opacity: 1;
+}
+
+.hover-path {
+    fill: var(--blue);
+}
+
+
+
+/*END c# SVG*/

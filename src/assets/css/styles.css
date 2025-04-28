@@ -1,0 +1,266 @@
+@import "reset.css";
+@import "svgs.css";
+
+:root {
+    --blue: rgba(0, 242, 255, 0.79);
+    --dark-blue: #000a18;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("../../fonts/jost/Jost-VariableFont_wght.ttf");
+    font-weight: 100 800;
+}
+
+@font-face {
+    font-family: "Inria Sans";
+    src: url("../../fonts/inria/InriaSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Inria Sans Bold";
+    src: url("../../fonts/inria/InriaSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Inria Sans Light";
+    src: url("../../fonts/inria/InriaSans-Light.ttf");
+}
+
+/*GLOBAL STYLES*/
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--blue);
+    line-height: 1.2em;
+}
+
+h1 {
+    font-family: "Jost", serif;
+    font-weight: 800;
+    font-size: 2em;
+
+}
+
+h2 {
+    font-family: "Jost", serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Jost", serif;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+body {
+    background-color: var(--dark-blue);
+}
+
+#root {
+    position: absolute;
+    color: white;
+    font-family: "Jost", serif;
+}
+
+/*.canvas {
+    z-index: -9999;
+    display: block;
+}*/
+
+header {
+    background-color: var(--dark-blue);
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.5em;
+    border-bottom: 1px solid white;
+    position: fixed;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    border-radius: 0.4em;
+    padding: 1.2em 1em;
+
+}
+
+nav a:hover {
+    cursor: pointer;
+    color: var(--blue);
+}
+
+/*CONTENT*/
+
+.content {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-container {
+    border-bottom: 1px white solid;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em 10%;
+
+}
+
+.project-highlight {
+    padding-top: 0.5em;
+}
+
+.project-highlight p {
+    padding: 0.5em 0 ;
+}
+
+#about {
+    gap: 2em;
+}
+
+#about div:not(:first-child) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    align-items: center;
+}
+
+.about-me p {
+    padding: 0 20%;
+    line-height: 1.3em;
+}
+
+.experience-detail {
+    font-family: "Inria Sans", sans-serif;
+    margin: 2em 0;
+}
+
+.experience-detail ul li {
+    margin: 0.4em 0;
+}
+
+.experience-detail ul li::marker {
+    content: url("../bullet.svg");
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.experience-title {
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    font-family: "Jost", serif;
+}
+
+.technologies-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0.5em;
+}
+
+.technologies-container div {
+    display: flex;
+    padding: 0.7em 0.5em;
+    margin: 0.6em;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.technologies-container div:hover {
+    color: var(--blue);
+}
+
+.contact {
+    display: flex;
+    flex-basis: 10em;
+    justify-content: space-around;
+    gap: 2em;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form button {
+    font-family: "Jost", serif;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 0.4em;
+    margin-top: 1em;
+    padding: 0.5em 0.2em;
+    background: var(--blue);
+}
+
+.form button:hover {
+    background: var(--dark-blue);
+    border: 1px solid var(--blue);
+    border-color: var(--blue);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin: 0.5em 0;
+
+}
+
+.form-container label {
+    color: var(--blue);
+}
+
+.form-container input {
+    font-family: "Inria Sans", sans-serif;
+    padding: 0.2em 0.2em;
+    color: white;
+    font-size: 1.2em;
+    background-color: transparent;
+    border-radius: 0.2em;
+    border: 1px solid white;
+}
+
+.contact-detail div {
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.form-container input:focus {
+    outline: none;
+}
+
+.social-networks {
+    margin-top: 1em;
+    display: flex;
+    gap: 0.8em;
+}
+
+.social-networks a:visited {
+    color: var(--blue);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    margin: 1.5em;
+}
+
