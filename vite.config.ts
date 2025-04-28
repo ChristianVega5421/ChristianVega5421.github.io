@@ -6,6 +6,6 @@ export default defineConfig({
     server: {
         // allowedHosts: ['127.0.0.1', 'glowing-rich-locust.ngrok-free.app'],
     },
-    // base:"https://christianvega5421.github.io/",
+    base:"https://christianvega5421.github.io/",
     plugins: [react()],
 })
