@@ -21,7 +21,7 @@ type Technology = {
 const Content = () => {
     const [technologies, setTechnologies] = useState<Technology[]>([])
 
-    const mouseEnter = (e) => {
+    const mouseEnter = (e:never) => {
         const children = e.target.children[0]
         if (children) {
             const target = children.getElementsByTagName('path')
@@ -33,7 +33,7 @@ const Content = () => {
         }
     }
 
-    const mouseLeave = (e) => {
+    const mouseLeave = (e:never) => {
         const children = e.target.children[0]
         if (children) {
             const target = children.getElementsByTagName('path')
