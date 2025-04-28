@@ -18,10 +18,11 @@ type Technology = {
     icon: ReactElement
 }
 
+
 const Content = () => {
     const [technologies, setTechnologies] = useState<Technology[]>([])
 
-    const mouseEnter = (e:never) => {
+    const mouseEnter = (e: any) => {
         const children = e.target.children[0]
         if (children) {
             const target = children.getElementsByTagName('path')
@@ -33,7 +34,7 @@ const Content = () => {
         }
     }
 
-    const mouseLeave = (e:never) => {
+    const mouseLeave = (e: any) => {
         const children = e.target.children[0]
         if (children) {
             const target = children.getElementsByTagName('path')
@@ -116,6 +117,8 @@ const Content = () => {
                 }
             ])
     }, [])
+
+
     return (
         <div className="content">
             <Element name="about" className="content-container" id="about">
